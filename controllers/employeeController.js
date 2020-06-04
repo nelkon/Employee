@@ -5,6 +5,8 @@ var router = express.Router();
 
 
 router.get('/',(req,res) => {
-    res.json('Sample text');
+    res.render("employee/addOrEdit",{
+        viewTitle:"Insert Employee"
+    });
 });
 module.exports=router;
